@@ -5,25 +5,6 @@ from email.mime.multipart import MIMEMultipart
 import os
 from dotenv import load_dotenv
 
-# -----------------------  WHAT WILL THIS SCTIPT DO ---------------------------
-#   It will iterate over a data file and send an email per line.
-#   Line format : {email};{companyName};{personName}
-#   if  (personName != companyName) it will send `body_template_with_person_name` as body of the email
-#   else it will send `body_template_without_person_name` as body
-# ------------------------------------------------------------------------------
-
-
-# ------------------------  HOW TO RUN THE SCRIPT ------------------------------
-#   1. Prepare your contacts data in a file. Each line should have this format {email};{companyName};{personName}
-#  if you don't have the person's name repeat the `companyName` in the `personName` field
-#   2. Generate an app password -> https://myaccount.google.com/apppasswords
-#   2. Change the global variables in the top of the script by yours
-#   3. Create a .env file in the root and place your email credentials in it
-#   4. Install the script dependencies
-#   5. Run it
-# ------------------------------------------------------------------------------
-
-
 # Load environment variables from the .env file
 load_dotenv()
 
