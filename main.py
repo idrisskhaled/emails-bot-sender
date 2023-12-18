@@ -14,8 +14,9 @@ from dotenv import load_dotenv
 
 
 # ------------------------  HOW TO RUN THE SCRIPT ------------------------------
-#   1. Prepare contacts data in a file. Each line should have this format {email};{companyName};{personName}
+#   1. Prepare your contacts data in a file. Each line should have this format {email};{companyName};{personName}
 #  if you don't have the person's name repeat the `companyName` in the `personName` field
+#   2. Generate an app password -> https://myaccount.google.com/apppasswords
 #   2. Change the global variables in the top of the script by yours
 #   3. Create a .env file in the root and place your email credentials in it
 #   4. Install the script dependencies
