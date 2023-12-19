@@ -36,13 +36,13 @@ def send_email(to_email, body):
 
     with open(resume_location, 'rb') as resume_file:
         resume_part = MIMEApplication(resume_file.read(), Name=resume_filename)
-        resume_part['Content-Disposition'] = f'attachment; filename="${resume_filename}"'
+        resume_part['Content-Disposition'] = f'attachment; filename="{resume_filename}"'
         message.attach(resume_part)
 
     # Attach recommendation letter
     with open(recommendation_letter_location, 'rb') as resume_file:
         resume_part = MIMEApplication(resume_file.read(), Name=recommendation_letter_filename)
-        resume_part['Content-Disposition'] = f'attachment; filename="${recommendation_letter_filename}"'
+        resume_part['Content-Disposition'] = f'attachment; filename="{recommendation_letter_filename}"'
         message.attach(resume_part)
 
     # Connect to the SMTP server
